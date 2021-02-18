@@ -10,59 +10,68 @@
   <link rel="stylesheet" type="text/css" href="./css/reset.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="./js/javascript.js"></script>
 </head>
 <body>
-    <header>
-        <div></div>
-        <div class="logo"><img></div>
-        <div></div>
-        <nav>
-            <a>about me</a>
-            <a>works</a>
-            <a>skill</a>
-            <a>contact</a>
-        </nav>
-    </header>
+    <div class="wrapper">
+        <header>
+            <div>
+                <p>Portfolio</p>
+            </div>
+            <div class="logo"><img></div>
+            <nav>
+                <a>about me</a>
+                <a>works</a>
+                <a>skill</a>
+                <a>contact</a>
+            </nav>
+        </header>
     <main>
-        <div id="kyevisual">
-            <div><img></div>
-            <div class="backL"></div>
+        <div class="kyevisual">
+            <div class="backL">
+                <div>
+                    <p class="title">AAAAAAAAAAA</p>
+                    <p class="titleName">bbbbbbbbbbbb</p>
+                </div>
+            </div>
+            <div class="kyeImg"><img src=""></div>
         </div>
         <section id="about">
-            <div>
+            <div class="aboutBox">
                 <h1>About me</h1>
-                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                <p>あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
             </div>
         </section>
         <section id="works">
+            <div  class="workBox">
+                <h1>Works</h1>
                 <div>
-                    <h1>Works</h1>
-                    <div class="workBox">
-                        <div class="workBox1">
-                            <div><img></div>
-                            <div><img></div>
-                            <div><img></div>
-                        </div>
-                        <div class="workBox2">
-                            <div><img></div>
-                            <div><img></div>
-                            <div><img></div>
-                        </div>
+                    <div class="wBox line1">
+                        <div><img></div>
+                        <div><img></div>
+                        <div><img></div>
                     </div>
-
+                    <div class="wBox">
+                        <div><img></div>
+                        <div><img></div>
+                        <div><img></div>
+                    </div>
                 </div>
+                
+            </div>
         </section>
         <section id="skill">
             <div>
                 <h1>Skill</h1>
                 <div class="skillBox">
-                    <div class="buttonBox"><p>Illustrator</p></div>
-                    <div class="buttonBox"><p>Photoshop</p></div>
-                    <div class="buttonBox"><p>Dreamweaver</p></div>
-                    <div class="buttonBox"><p>HTML</p></div>
-                    <div class="buttonBox"><p>CSS</p></div>
-                    <div class="buttonBox"><p>javsqlipt</p></div>
-                    <div class="buttonBox"><p>jQuery</p></div>
+                    <div class="btnBox"><p>Illustrator</p></div>
+                    <div class="btnBox"><p>Photoshop</p></div>
+                    <div class="btnBox"><p>Dreamweaver</p></div>
+                    <div class="btnBox"><p>HTML</p></div>
+                    <div class="btnBox"><p>CSS</p></div>
+                    <div class="btnBox"><p>javsqlipt</p></div>
+                    <div class="btnBox"><p>jQuery</p></div>
                 </div>
             </div>
         </section>
@@ -70,31 +79,40 @@
             <div>
                 <h1>Contact</h1>
                 <form>
-                    <div>
-                        <p>名前</p>
-                        <p class="textSd">*</p>
+                    <div class="A">
+                        <div class="setbox">
+                            <p>名前</p>
+                            <p class="textSd">*</p>
+                        </div>
                         <input name="name">
                     </div>
-                    <div>
-                        <p>メール</p>
-                        <p class="textSd">*</p>
+                    <div class="A">
+                        <div  class="setbox">
+                            <p>メール</p>
+                            <p class="textSd">*</p>
+                        </div>
                         <input name="mail">
                     </div>
-                    <div>
-                        <p>メッセージ</p>
-                        <p class="textSd">*</p>
+                    <div class="A">
+                        <div  class="setbox">
+                            <p>メッセージ</p>
+                            <p class="textSd">*</p>
+                        </div>
                         <textarea name="message">ｓｓｓｓｓｓｓｓ</textarea>
                     </div>
-                    <label>
-                        <input name="confirm">
-                        
-                        <span></span>
-                    </label>
-                    <button>
-                        <p>送信</p>
-                    </button>
+                    <div class="A">
+                        <label>
+                            <input class="chk" name="confirm" type="checkbox">                         
+                            <span>I agree to the Privacy Policy.</span>
+                        </label>
+                    </div>
+                    <div class="A">                        
+                        <button class="Block">
+                            <p>送信</p>
+                        </button>
+                    </div>
                 </form>
-
+                
             </div>
         </section>
         <div class=footerBox">
@@ -119,5 +137,6 @@
     <footer>
         <p>CopyLigth</p>
     </footer>
+</div>
 </body>
 </html>
