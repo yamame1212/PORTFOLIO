@@ -63,7 +63,7 @@ h1{
 header{
     position: sticky;
     top:0;
-    z-index: 10;
+    z-index: 5;
     width: 100%;
     height: 80px;
     display:flex;
@@ -72,6 +72,10 @@ header{
     padding: 0 20px;
     background-color: black;
     color:white;    
+}
+
+.logoText{
+    font-size: 140%;
 }
 
 .logo{
@@ -84,52 +88,65 @@ header{
 nav a{
 margin: 20px;
 }
+nav a:hover{
+    border-bottom: solid 1px white;
+}
 
 .kyevisual{
-    height: 700px;   
-    position: relative;
+    display:flex;
 }
+
 .kyeImg{
-    width:100%;
+    height: 700px;   
+   flex:2;
+   /* object-fit: contain;
+   width: 100%;
     height: 100%;
-    background-color: red;
+    background-color: red; */
+}
+.kyeImg img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .backL{
-    position:absolute;
+    flex:1;
     display: flex;
     align-items: center;    
-    top:0;
-    left:0;
-    width: 40%;
-    height: 100%;        
     background-color:aquamarine;
 }
 .backL div{
-    max-width: 300%;
+    justify-content: center;
+    align-items: center;
 }
 .title{
     width: 100%;    
     font-size: 500%;  
     letter-spacing: 40px;  
     overflow: hidden;
-    font-family:'Courier New', Courier, monospace
-    letter-spacing: 10px;
+    /* font-family:'Courier New', Courier, monospace; */
+    letter-spacing:0.5em;
     
 }
 .titleName{
     font-size:150%;
-    letter-spacing: 25px;
+    letter-spacing: 1.2em;
     overflow: hidden;
 }
-
-
 
 .aboutBox p{
     width:50%;
     margin: 0 auto;
 
-    background-color: turquoise;
+    /* background-color: rgb(146, 240, 230); */
+}
+
+.aboutBox img{
+    display: block;
+    width: 100px;
+    height:100px;
+    margin: 20px auto;
 }
 
 .workBox{
@@ -139,16 +156,33 @@ margin: 20px;
 }
 
 .wBox{
-    display: flex;        
+    display: flex;           
     justify-content: center;
     /* background-color: violet; */
 }
 .wBox div{
     width: 200px;
     height: 200px;
+    margin:0 5px; 
+    /* background-color: yellowgreen; */
+    position: relative;
+}
+.wBox p{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    /* font-size: 2em; */
+    font-family :Quicksand, sans-serif;
+    opacity: 0.8;
+    color:white;
+}
+.wBox img{
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
-    margin:0 5px;
-    background-color: yellowgreen;
 }
 .line1{
     margin-bottom: 10px;
@@ -279,11 +313,16 @@ textarea{
     
   .box p{
       margin-bottom: 5px;
-
   }
 
   .box i{
-      margin-right: 5px;
+            margin-right: 5px;
+      text-align: center;
+      
+  }
+
+  .box a:hover{
+      border-bottom: solid 1px;
   }
 
   footer{
@@ -296,4 +335,54 @@ textarea{
     }
 footer p{
     padding-top: 15px;
+    }
+
+
+    /* モーダル */
+    .modal{
+        display: none;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    .modal__bg{
+        background: rgba(0,0,0,0.8);
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+    }
+    .modal__content{
+        background: #fff;
+        left: 50%;
+        padding: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 60%;
+        display: flex;
+    }
+    
+    .modal__content img{
+        flex:1;
+        width:300px;
+        height: 500px;
+        margin-right: 20px;
+        /* object-fit: contain; */
+        object-fit: cover;
+        /* background-color:wheat; */
+    }   
+    .modal__content p{
+        flex:1;
+        height: 100%;
+        margin-right: 20px;
+        /* background-color:violet; */
+    }
+    .closeBtn{        
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        color:white;
+        padding: 10px 10px 10px 15px;        
     }

@@ -18,7 +18,9 @@
     <div class="wrapper">
         <header>
             <div>
-                <p>Portfolio</p>
+                <a href="./index.html">
+                <p class="logoText">Portfolio</p>
+                </a>
             </div>
             <div >
                 <img class="logo" src="./images/logo.svg">
@@ -38,12 +40,13 @@
                     <p class="titleName">Sayaka Yamashita</p>
                 </div>
             </div>
-            <div class="kyeImg"><img src=""></div>
+            <div class="kyeImg"><img src="./images/pink2.jpg"></div>
         </div>
         <section id="about">
             <div class="aboutBox">
                 <h1>About me</h1>
-                <p>あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+                <img src="./images/1.jpg">
+                <p>自己紹介あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
             </div>
         </section>
         <section id="works">
@@ -51,18 +54,22 @@
                 <h1>Works</h1>
                 <div>
                     <div class="wBox line1">
-                        <div><img></div>
-                        <div><img></div>
-                        <div><img></div>
+                        <div>
+                            <a class="js-modal-open1" href="">
+                                <img src="./images/blue1.jpg">
+                                <p>ロゴ</p>
+                            </a>
+                        </div>
+                        <div><a class="js-modal-open2" href=""><img src="./images/blue2-ore.jpg"><p>名刺</p></a></div>
+                        <div><a class="js-modal-open3" href=""><img src="./images/blue3-ore.jpg"><p>リーフレット</p></a></div>
                     </div>
                     <div class="wBox">
-                        <div><img></div>
-                        <div><img></div>
-                        <div><img></div>
+                        <div><a class="js-modal-open4" href=""><img src="./images/pink1-bl.jpg"><p>パッケージ</p></a></div>
+                        <div><a class="js-modal-open5" href=""><img src="./images/pink2.jpg"><p>チラシ</p></a></div>
+                        <div><a class="js-modal-open6" href=""><img src="./images/red-wh.jpg"><p>WEB</p></a></div>
                     </div>
-                </div>
-                
-            </div>
+                </div>                
+            </div>            
         </section>
         <section id="skill">
             <div>
@@ -141,10 +148,72 @@
             </div>
         </div>
         <div id="page_top"><a href="#"></a></div>
+        
     </main>
     <footer>
         <p>Copyright © 2021 SayakaYamashtia. All Rights Reserved.</p>
     </footer>
 </div>
+<!-- モーダル -->
+<div class="modal js-modal1">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+        <img src="./images/blue1.jpg">
+        <p>ここに説明を入れる予定　ロゴ　あああああああああああああああああああああああああsssssssssssssssssssssssssssssssssssssssssssss</p>
+        <div class="closeBtn">
+            <a class="js-modal-close" href="">×</a>
+        </div>
+    </div><!--modal__inner-->
+</div><!--modal-->
+<div class="modal js-modal2">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+        <img src="./images/blue2-ore.jpg">
+        <p>ここに説明を入れる予定 名刺</p>
+        <div class="closeBtn">
+            <a class="js-modal-close" href="">×</a>
+        </div>
+    </div><!--modal__inner-->
+</div><!--modal-->
+<div class="modal js-modal3">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+        <img src="./images/blue3-ore.jpg">
+        <p>ここに説明を入れる予定 リーフレット</p>
+        <div class="closeBtn">
+            <a class="js-modal-close" href="">×</a>
+        </div>
+    </div><!--modal__inner-->
+</div><!--modal-->
+<div class="modal js-modal4">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+        <img src="./images/pink1-bl.jpg">
+        <p>ここに説明を入れる予定 パッケージ</p>
+        <div class="closeBtn">
+            <a class="js-modal-close" href="">×</a>
+        </div>
+    </div><!--modal__inner-->
+</div><!--modal-->
+<div class="modal js-modal5">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+        <img src="./images/pink2.jpg">
+        <p>ここに説明を入れる予定 チラシ</p>
+        <div class="closeBtn">
+            <a class="js-modal-close" href="">×</a>
+        </div>
+    </div><!--modal__inner-->
+</div><!--modal-->
+<div class="modal js-modal6">
+    <div class="modal__bg js-modal-close"></div>
+    <div class="modal__content">
+        <img src="./images/red-wh.jpg">
+        <p>ここに説明を入れる予定 WEB</p>
+        <div class="closeBtn">
+            <a class="js-modal-close" href="">×</a>
+        </div>
+    </div><!--modal__inner-->
+</div><!--modal-->
 </body>
 </html>

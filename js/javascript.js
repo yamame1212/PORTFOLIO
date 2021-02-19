@@ -18,3 +18,35 @@ jQuery(function() {
       return false;
   });
 });
+
+
+$(function(){
+  $('.js-modal-open1').on('click',function(){
+      $('.js-modal1').fadeIn();
+      return false;
+  });
+  $('.js-modal-open2').on('click',function(){
+      $('.js-modal2').fadeIn();
+      return false;
+  });
+  $('.js-modal-open3').on('click',function(){
+      $('.js-modal3').fadeIn();
+      return false;
+  });
+  $('.js-modal-open4').on('click',function(){
+      $('.js-modal4').fadeIn();
+      return false;
+  });
+  $('.js-modal-open5').on('click',function(){
+      $('.js-modal5').fadeIn();
+      return false;
+  });
+  $('.js-modal-open6').on('click',function(){
+      $('.js-modal6').fadeIn();
+      return false;
+  });
+  $('.js-modal-close').on('click',function(){
+      $('.modal').fadeOut();
+      return false;
+  });
+});
