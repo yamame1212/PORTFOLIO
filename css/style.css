@@ -2,6 +2,8 @@
 :root {
     --main-color: rgb(255, 255, 255);
     --sub-color:rgb(238, 228, 228);
+    --sub-rgba-color:rgba(238, 228, 228,0.8);
+    --accent-color:rgb(168, 228, 220);
   }
 
 
@@ -114,7 +116,9 @@ nav a:hover{
     flex:1;
     display: flex;
     align-items: center;    
-    background-color:aquamarine;
+    padding-left: 10px;
+    background-color:var(--accent-color);
+    
 }
 .backL div{
     justify-content: center;
@@ -146,7 +150,13 @@ nav a:hover{
     display: block;
     width: 100px;
     height:100px;
-    margin: 20px auto;
+    margin: 20px auto 5px auto;
+}
+
+.self p{
+    text-align: center;
+    line-height: 1.5em;    
+    
 }
 
 .workBox{
@@ -165,8 +175,18 @@ nav a:hover{
     height: 200px;
     margin:0 5px; 
     /* background-color: yellowgreen; */
+    overflow: hidden;
+    border-radius: 50%;
     position: relative;
 }
+
+.wBox img:hover{   
+    transform: scale(1.1);	/*画像の拡大率*/
+	transition-duration: 0.3s;	/*変化に掛かる時間*/
+    opacity: 0.5;
+}
+
+
 .wBox p{
     position:absolute;
     top:50%;
@@ -182,7 +202,7 @@ nav a:hover{
     object-fit:cover;
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    
 }
 .line1{
     margin-bottom: 10px;
@@ -385,4 +405,139 @@ footer p{
         background-color: black;
         color:white;
         padding: 10px 10px 10px 15px;        
+    }
+
+@media(max-width:500px){
+
+        .wraper{
+            max-width: 500px;                         
+        }
+
+        .kyevisual{
+            font-size: 70%;
+        }
+        #works{
+            height: 700px;
+            align-items: center;
+
+        }
+
+        .wBox div{
+            width: 150px;
+            height: 150px;
+        }
+
+        
+              /* バーガーボタンの表示 */
+    .btn {
+        /* ボタンの配置位置  */    
+        position: fixed;
+        top: 2%;
+        right: 6.5%;
+        /* ボタンの大きさ  */
+        width: 50px;
+        height: 50px;        
+        /* 最前面に */
+        z-index: 100;    
+        
+    }
+    .btn-line {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 3px;
+        background-color:white;
+        transition: .2s;
+    }
+    /****** 上下のバーガー線 *****/
+    .btn-line::before,
+    .btn-line::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color:white;
+        transition: .5s;
+    }
+    .btn-line::before {
+        /* 上の線の位置 */
+        transform: translateY(-15px);
+    }
+    .btn-line::after {
+        /* 下の線の位置 */
+        transform: translateY(15px);
+    }
+       
+    /***** メニューオープン時 　×ボタンにする*****/
+    .btn-line.open {
+        background-color: transparent;
+        /* 真ん中の線を透明に */
+    }
+    .btn-line.open::before,
+    .btn-line.open::after {
+        content: "";
+        background-color:white;
+        /* 上下の線の色を変える */
+        transition: .2s;
+    }
+    .btn-line.open::before {
+        transform: rotate(45deg);
+        /* 上の線を傾ける */
+    }
+    .btn-line.open::after {
+        transform: rotate(-45deg);
+        /* 下の線を傾ける */
+    }
+
+    /* ナビの処理 */
+    .logoArea{
+        width:50%;
+    }
+   .btn{
+       display: block;
+       background-color:var(--accent-color);   
+       z-index:200;    
+   }
+   .btn-line{
+       background-color:white;
+   }
+    .navBoxAll{        
+        position: fixed;
+        width: 80%;        
+        right: 2%;
+        top:-50%;
+        height: 30vh;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;                   
+        transition: .3s;
+        justify-content: center;
+        align-items: center;
+        z-index: 100; 
+        background-color:var(--sub-rgba-color);
+        
+    }
+    .navBoxAll a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        color:black;
+        border: none;
+        font-size: 100%;
+        border-bottom: dotted 1px white;
+        padding-left: 20px;
+    }
+    
+    .navBoxAll.open {
+        top:0;
+    }
+
+.backL{
+    width: 100%;
+    
+
+}
+
+
+
     }

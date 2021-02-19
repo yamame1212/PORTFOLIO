@@ -50,3 +50,15 @@ $(function(){
       return false;
   });
 });
+
+
+
+$(function () {
+  $('.js-btn').on('click', function () {        
+    // js-btnクラスをクリックすると、
+    $('.navBoxAll , .btn-line').toggleClass('open'); 
+    // メニューとバーガーの線にopenクラスをつけ外しする
+  })
+});
+
+
